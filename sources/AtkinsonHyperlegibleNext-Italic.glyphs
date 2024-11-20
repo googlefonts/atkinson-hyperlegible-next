@@ -51,7 +51,7 @@ value = {
 wght = {
 200 = 60;
 300 = 75;
-400 = 91;
+400 = 94;
 500 = 115;
 600 = 130;
 700 = 146;
@@ -53161,11 +53161,10 @@ weightClass = 300;
 },
 {
 axesValues = (
-91
+94
 );
 instanceInterpolations = {
-"685EC287-0A44-43F1-AA0E-B98846C13147" = 0.91176;
-m003 = 0.08824;
+"685EC287-0A44-43F1-AA0E-B98846C13147" = 1;
 };
 isItalic = 1;
 name = Italic;
@@ -60831,7 +60830,7 @@ key = copyrights;
 values = (
 {
 language = dflt;
-value = "© 2020, 2024 Braille Institute of America, Inc., a 501(c)(3) Charitable Organization.";
+value = "Copyright 2020-2024 The Atkinson Hyperlegible Next Project Authors (https://github.com/googlefonts/atkinson-hyperlegible-next)";
 }
 );
 },
@@ -60853,13 +60852,13 @@ key = licenses;
 values = (
 {
 language = dflt;
-value = "Braille Institute of America, Inc. provides Atkinson Hyperlegible for use, without derivatives or alteration, to the public free of charge for all non-commercial and commercial work. No attribution required.";
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org";
 }
 );
 },
 {
 key = licenseURL;
-value = "https://www.BrailleInstitute.org/";
+value = "https://openfontlicense.org";
 },
 {
 key = manufacturers;
@@ -60872,7 +60871,7 @@ value = "Applied Design Works, Letters from Sweden";
 },
 {
 key = manufacturerURL;
-value = "https://www.BrailleInstitute.org/";
+value = "https://www.brailleinstitute.org/";
 }
 );
 settings = {
