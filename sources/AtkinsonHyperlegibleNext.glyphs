@@ -35,6 +35,46 @@ value = (
 45,
 46
 );
+},
+{
+name = unicodeRanges;
+value = (
+0,
+1,
+2,
+3,
+5,
+6,
+29,
+31,
+33,
+35,
+45,
+46
+);
+},
+{
+name = "Enforce Compatibility Check";
+value = 1;
+},
+{
+name = fsType;
+value = (
+);
+},
+{
+name = "Axis Mappings";
+value = {
+wght = {
+200 = 60;
+300 = 75;
+400 = 91;
+500 = 115;
+600 = 130;
+700 = 146;
+800 = 170;
+};
+};
 }
 );
 date = "2024-04-25 14:25:41 +0000";
@@ -67,26 +107,26 @@ tag = aalt;
 },
 {
 automatic = 1;
-code = "lookup ccmp_Other_1 {
+code = "lookup ccmp_DFLT_1 {
 	@CombiningTopAccents = [acutecomb brevecomb caroncomb circumflexcomb commaturnedabovecomb dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ringcomb tildecomb];
 	lookupflag UseMarkFilteringSet @CombiningTopAccents;
 	sub i' @CombiningTopAccents by idotless;
 	sub j' @CombiningTopAccents by jdotless;
-} ccmp_Other_1;
+} ccmp_DFLT_1;
 
-lookup ccmp_Other_2 {
+lookup ccmp_Other_1 {
 	lookupflag 0;
 	@Markscomb = [dieresiscomb dotaccentcomb gravecomb acutecomb hungarumlautcomb circumflexcomb caroncomb brevecomb ringcomb tildecomb macroncomb ogonekcomb];
 	@MarkscombCase = [dieresiscomb.case dotaccentcomb.case gravecomb.case acutecomb.case hungarumlautcomb.case circumflexcomb.case caroncomb.case brevecomb.case ringcomb.case tildecomb.case macroncomb.case ogonekcomb.case];
 	sub @Markscomb @Markscomb' by @MarkscombCase;
 	sub @Uppercase @Markscomb' by @MarkscombCase;
-} ccmp_Other_2;
+} ccmp_Other_1;
 
-lookup ccmp_Other_3 {
+lookup ccmp_Other_2 {
 	lookupflag 0;
 	sub @Markscomb' @MarkscombCase by @MarkscombCase;
 	sub @MarkscombCase @Markscomb' by @MarkscombCase;
-} ccmp_Other_3;
+} ccmp_Other_2;
 ";
 tag = ccmp;
 },
@@ -340,7 +380,7 @@ over = -15;
 pos = -162;
 }
 );
-name = Light;
+name = ExtraLight;
 stemValues = (
 48,
 48,
@@ -52100,30 +52140,10 @@ metricRight = period;
 instances = (
 {
 axesValues = (
-62
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 200;
-},
-{
-Axis = Italic;
-Location = 0;
-}
-);
-},
-{
-name = "Style Name as STAT entry";
-value = wght;
-}
+60
 );
 instanceInterpolations = {
-"78636F1B-F233-4E70-8C3B-7E1F8D8169C5" = 0.05882;
-"883DA8B6-3D8E-4908-9E9E-18B044E47F8D" = 0.94118;
+"883DA8B6-3D8E-4908-9E9E-18B044E47F8D" = 1;
 };
 name = ExtraLight;
 weightClass = 200;
@@ -52131,25 +52151,6 @@ weightClass = 200;
 {
 axesValues = (
 76
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 300;
-},
-{
-Axis = Italic;
-Location = 0;
-}
-);
-},
-{
-name = "Style Name as STAT entry";
-value = wght;
-}
 );
 instanceInterpolations = {
 "78636F1B-F233-4E70-8C3B-7E1F8D8169C5" = 0.47059;
@@ -52162,25 +52163,6 @@ weightClass = 300;
 axesValues = (
 94
 );
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 400;
-},
-{
-Axis = Italic;
-Location = 0;
-}
-);
-},
-{
-name = "Style Name as STAT entry";
-value = wght;
-}
-);
 instanceInterpolations = {
 "78636F1B-F233-4E70-8C3B-7E1F8D8169C5" = 1;
 };
@@ -52189,25 +52171,6 @@ name = Regular;
 {
 axesValues = (
 118
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 500;
-},
-{
-Axis = Italic;
-Location = 0;
-}
-);
-},
-{
-name = "Style Name as STAT entry";
-value = wght;
-}
 );
 instanceInterpolations = {
 "77C32F3B-CDAD-439A-A41B-3F592148655B" = 0.375;
@@ -52220,25 +52183,6 @@ weightClass = 500;
 axesValues = (
 133
 );
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 600;
-},
-{
-Axis = Italic;
-Location = 0;
-}
-);
-},
-{
-name = "Style Name as STAT entry";
-value = wght;
-}
-);
 instanceInterpolations = {
 "77C32F3B-CDAD-439A-A41B-3F592148655B" = 0.60938;
 "78636F1B-F233-4E70-8C3B-7E1F8D8169C5" = 0.39063;
@@ -52249,25 +52193,6 @@ weightClass = 600;
 {
 axesValues = (
 148
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 700;
-},
-{
-Axis = Italic;
-Location = 0;
-}
-);
-},
-{
-name = "Style Name as STAT entry";
-value = wght;
-}
 );
 instanceInterpolations = {
 "77C32F3B-CDAD-439A-A41B-3F592148655B" = 0.84375;
@@ -52281,29 +52206,9 @@ weightClass = 700;
 axesValues = (
 170
 );
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 800;
-},
-{
-Axis = Italic;
-Location = 0;
-}
-);
-},
-{
-name = "Style Name as STAT entry";
-value = wght;
-}
-);
 instanceInterpolations = {
 "5C67A8D6-F0A6-408B-B629-E0E82D5C59F6" = 1;
 };
-isBold = 1;
 name = ExtraBold;
 weightClass = 800;
 }
@@ -56597,7 +56502,7 @@ key = copyrights;
 values = (
 {
 language = dflt;
-value = "© 2020, 2024 Braille Institute of America, Inc., a 501(c)(3) Charitable Organization.";
+value = "Copyright 2020-2024 The Atkinson Hyperlegible Next Project Authors (https://github.com/googlefonts/atkinson-hyperlegible-next)";
 }
 );
 },
@@ -56619,13 +56524,13 @@ key = licenses;
 values = (
 {
 language = dflt;
-value = "Braille Institute of America, Inc. provides Atkinson Hyperlegible for use, without derivatives or alteration, to the public free of charge for all non-commercial and commercial work. No attribution required.";
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org";
 }
 );
 },
 {
 key = licenseURL;
-value = "https://www.BrailleInstitute.org/";
+value = "https://openfontlicense.org";
 },
 {
 key = manufacturers;
@@ -56638,7 +56543,7 @@ value = "Applied Design Works, Letters from Sweden";
 },
 {
 key = manufacturerURL;
-value = "https://www.BrailleInstitute.org/";
+value = "https://www.brailleinstitute.org/";
 }
 );
 settings = {
