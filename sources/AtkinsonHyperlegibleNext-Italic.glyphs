@@ -35,6 +35,29 @@ value = (
 45,
 46
 );
+},
+{
+name = "Enforce Compatibility Check";
+value = 1;
+},
+{
+name = fsType;
+value = (
+);
+},
+{
+name = "Axis Mappings";
+value = {
+wght = {
+200 = 60;
+300 = 75;
+400 = 91;
+500 = 115;
+600 = 130;
+700 = 146;
+800 = 170;
+};
+};
 }
 );
 date = "2024-04-25 14:25:41 +0000";
@@ -238,19 +261,6 @@ name = strikeoutSize;
 value = 48;
 },
 {
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 200;
-},
-{
-Axis = Italic;
-Location = 1;
-}
-);
-},
-{
 name = TTFStems;
 value = (
 {
@@ -341,7 +351,7 @@ over = -15;
 pos = -162;
 }
 );
-name = "Light Italic";
+name = "ExtraLight Italic";
 stemValues = (
 48,
 48,
@@ -406,19 +416,6 @@ value = 200;
 {
 name = strikeoutSize;
 value = 56;
-},
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 400;
-},
-{
-Axis = Italic;
-Location = 1;
-}
-);
 },
 {
 name = TTFStems;
@@ -572,19 +569,6 @@ name = strikeoutSize;
 value = 56;
 },
 {
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 700;
-},
-{
-Axis = Italic;
-Location = 1;
-}
-);
-},
-{
 name = TTFStems;
 value = (
 {
@@ -735,19 +719,6 @@ value = 200;
 {
 name = strikeoutSize;
 value = 56;
-},
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 800;
-},
-{
-Axis = Italic;
-Location = 1;
-}
-);
 },
 {
 name = TTFZones;
@@ -53167,22 +53138,10 @@ metricRight = period;
 instances = (
 {
 axesValues = (
-62
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 200;
-}
-);
-}
+60
 );
 instanceInterpolations = {
-"685EC287-0A44-43F1-AA0E-B98846C13147" = 0.05882;
-m003 = 0.94118;
+m003 = 1;
 };
 isItalic = 1;
 name = "ExtraLight Italic";
@@ -53190,22 +53149,11 @@ weightClass = 200;
 },
 {
 axesValues = (
-76
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 300;
-}
-);
-}
+75
 );
 instanceInterpolations = {
-"685EC287-0A44-43F1-AA0E-B98846C13147" = 0.47059;
-m003 = 0.52941;
+"685EC287-0A44-43F1-AA0E-B98846C13147" = 0.44118;
+m003 = 0.55882;
 };
 isItalic = 1;
 name = "Light Italic";
@@ -53213,47 +53161,22 @@ weightClass = 300;
 },
 {
 axesValues = (
-94
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 400;
-}
-);
-},
-{
-name = "Style Name as STAT entry";
-value = ital;
-}
+91
 );
 instanceInterpolations = {
-"685EC287-0A44-43F1-AA0E-B98846C13147" = 1;
+"685EC287-0A44-43F1-AA0E-B98846C13147" = 0.91176;
+m003 = 0.08824;
 };
 isItalic = 1;
 name = Italic;
 },
 {
 axesValues = (
-118
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 500;
-}
-);
-}
+115
 );
 instanceInterpolations = {
-"685EC287-0A44-43F1-AA0E-B98846C13147" = 0.625;
-"FD063E2A-CA5A-4098-9599-3D7AAD1E2DEB" = 0.375;
+"685EC287-0A44-43F1-AA0E-B98846C13147" = 0.67188;
+"FD063E2A-CA5A-4098-9599-3D7AAD1E2DEB" = 0.32813;
 };
 isItalic = 1;
 name = "Medium Italic";
@@ -53261,22 +53184,11 @@ weightClass = 500;
 },
 {
 axesValues = (
-133
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 600;
-}
-);
-}
+130
 );
 instanceInterpolations = {
-"685EC287-0A44-43F1-AA0E-B98846C13147" = 0.39063;
-"FD063E2A-CA5A-4098-9599-3D7AAD1E2DEB" = 0.60938;
+"685EC287-0A44-43F1-AA0E-B98846C13147" = 0.4375;
+"FD063E2A-CA5A-4098-9599-3D7AAD1E2DEB" = 0.5625;
 };
 isItalic = 1;
 name = "SemiBold Italic";
@@ -53284,22 +53196,11 @@ weightClass = 600;
 },
 {
 axesValues = (
-148
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 700;
-}
-);
-}
+146
 );
 instanceInterpolations = {
-"685EC287-0A44-43F1-AA0E-B98846C13147" = 0.15625;
-"FD063E2A-CA5A-4098-9599-3D7AAD1E2DEB" = 0.84375;
+"685EC287-0A44-43F1-AA0E-B98846C13147" = 0.1875;
+"FD063E2A-CA5A-4098-9599-3D7AAD1E2DEB" = 0.8125;
 };
 isBold = 1;
 isItalic = 1;
@@ -53310,21 +53211,9 @@ weightClass = 700;
 axesValues = (
 170
 );
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 800;
-}
-);
-}
-);
 instanceInterpolations = {
 m004 = 1;
 };
-isBold = 1;
 isItalic = 1;
 name = "ExtraBold Italic";
 weightClass = 800;
