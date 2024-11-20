@@ -99,12 +99,15 @@ feature case;
 tag = aalt;
 },
 {
-automatic = 1;
 code = "lookup ccmp_DFLT_1 {
-	@CombiningTopAccents = [acutecomb brevecomb caroncomb circumflexcomb commaturnedabovecomb dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ringcomb tildecomb];
+	@CombiningTopAccents = [acutecomb brevecomb caroncomb circumflexcomb dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ringcomb tildecomb];
 	lookupflag UseMarkFilteringSet @CombiningTopAccents;
 	sub i' @CombiningTopAccents by idotless;
-	sub j' @CombiningTopAccents by jdotless;
+	@SoftDotted = [i j];
+	@SoftDottedDotless = [idotless jdotless];
+	sub @SoftDotted' @CombiningTopAccents by @SoftDottedDotless;
+	sub iogonek' @CombiningTopAccents by idotless ogonekcomb;
+	sub iogonek' @CombiningTopAccents by idotless ogonekcomb;
 } ccmp_DFLT_1;
 
 lookup ccmp_Other_1 {
