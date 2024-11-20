@@ -4,103 +4,14 @@ fontbakery version: 0.12.10
 
 
 
-## Experimental checks
-
-These won't break the CI job for now, but will become effective after some time if nobody raises any concern.
 
 
-<details><summary>[1] AtkinsonHyperlegibleNext[wght].ttf</summary>
+## Check results
+
+
+
+<details><summary>[11] AtkinsonHyperlegibleNext[wght].ttf</summary>
 <div>
-<details>
-    <summary>🔥 <b>FAIL</b> Checking that the typoAscender exceeds the yMax of the /Agrave. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.metrics.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>OS/2.sTypoAscender value should be greater than 863, but got 796 instead</p>
- [code: typoAscender]
-
-
-
-</div>
-</details>
-</div>
-</details>
-
-<details><summary>[1] AtkinsonHyperlegibleNext-Italic[wght].ttf</summary>
-<div>
-<details>
-    <summary>🔥 <b>FAIL</b> Checking that the typoAscender exceeds the yMax of the /Agrave. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.metrics.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>OS/2.sTypoAscender value should be greater than 863, but got 796 instead</p>
- [code: typoAscender]
-
-
-
-</div>
-</details>
-</div>
-</details>
-
-
-
-
-## All other checks
-
-
-
-<details><summary>[18] AtkinsonHyperlegibleNext[wght].ttf</summary>
-<div>
-<details>
-    <summary>🔥 <b>FAIL</b> Checking Vertical Metric Linegaps. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.metrics.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>hhea lineGap is not equal to 0.</p>
-<p><em>Overridden</em>: This check was originally a WARN but was
-overridden by the universal profile:
-For Google Fonts, all messages from this check are considered FAILs.</p>
- [code: hhea]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>🔥 <b>FAIL</b> Checking OS/2 Metrics match hhea Metrics. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.metrics.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>OS/2 sTypoDescender (-251) and hhea descent (-161) must be equal.</p>
- [code: descender]
-
-
-
-</div>
-</details>
-
 <details>
     <summary>🔥 <b>FAIL</b> Combined length of family and style must not exceed 32 characters. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.name.html#"></a></summary>
     <div>
@@ -180,83 +91,6 @@ For Google Fonts, all messages from this check are considered FAILs.</p>
 </details>
 
 <details>
-    <summary>🔥 <b>FAIL</b> Check copyright namerecords match license file. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.license.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>License file OFL.txt exists but NameID 13 (LICENSE DESCRIPTION) value on platform 3 (WINDOWS) is not specified for that. Value was: &quot;Braille Institute of America, Inc. provides Atkinson Hyperlegible for use, without derivatives or alteration, to the public free of charge for all non-commercial and commercial work. No attribution required.&quot; Must be changed to &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: <a href="https://openfontlicense.org">https://openfontlicense.org</a>&quot;</p>
- [code: wrong]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>🔥 <b>FAIL</b> Substitute copyright, registered and trademark symbols in name table entries. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.name.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>NAMEID #0 contains symbols that should be replaced by '(c)'.</p>
- [code: unwanted-chars]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>🔥 <b>FAIL</b> Copyright notices match canonical pattern in fonts <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.copyright.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>Name Table entry: Copyright notices should match a pattern similar to:</p>
-<p>&quot;Copyright 2020 The Familyname Project Authors (git url)&quot;</p>
-<p>But instead we have got:</p>
-<p>&quot;© 2020, 2024 Braille Institute of America, Inc., a 501(c)(3) Charitable Organization.&quot;</p>
- [code: bad-notice-format]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>🔥 <b>FAIL</b> Checking OS/2 fsType does not impose restrictions. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.os2.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>In this font fsType is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.</p>
-<p>No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead.</p>
- [code: drm]
-
-
-
-</div>
-</details>
-
-<details>
     <summary>🔥 <b>FAIL</b> Check Google Fonts glyph coverage. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.glyphset.html#"></a></summary>
     <div>
 
@@ -319,57 +153,6 @@ The font may be embedded but must only be installed temporarily on other systems
 </details>
 
 <details>
-    <summary>🔥 <b>FAIL</b> Are there non-ASCII characters in ASCII-only NAME table entries? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.name.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>Bad string at [nameID 0, 'utf_16_be']: 'b'© 2020, 2024 Braille Institute of America, Inc., a 501(c)(3) Charitable Organization.''</p>
- [code: bad-string]
-
-
-
-* 🔥 **FAIL** <p>There are 1 strings containing non-ASCII characters in the ASCII-only NAME table entries.</p>
- [code: non-ascii-strings]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>🔥 <b>FAIL</b> Check font follows the Google Fonts vertical metric schema <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.vmetrics.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>OS/2.sTypoLineGap is &quot;150&quot; it should be 0</p>
- [code: bad-OS/2.sTypoLineGap]
-
-
-
-* 🔥 **FAIL** <p>hhea.lineGap is &quot;200&quot; it should be 0</p>
- [code: bad-hhea.lineGap]
-
-
-
-* 🔥 **FAIL** <p>The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 1157 when it should be at least 1200</p>
- [code: bad-hhea-range]
-
-
-
-</div>
-</details>
-
-<details>
     <summary>⚠️ <b>WARN</b> Check math signs have the same width. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#"></a></summary>
     <div>
 
@@ -388,7 +171,7 @@ equal, notequal</p>
 <p>Width = 602:
 logicalnot</p>
 <p>Width = 579:
-plusminus, lessequal, greaterequal</p>
+lessequal, plusminus, greaterequal</p>
 <p>Width = 532:
 multiply</p>
 <p>Width = 554:
@@ -454,27 +237,27 @@ be served. You can solve this by either manually adding additional
 subset declarations to METADATA.pb, or by editing the glyphset
 definitions.</p>
 <ul>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, tifinagh, math, coptic</li>
-<li>U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: math, todhri, tai-le, duployan, hebrew, malayalam, old-permic, tifinagh, syriac, coptic, canadian-aboriginal</li>
-<li>U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, math, tifinagh, coptic</li>
+<li>U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: hebrew, malayalam, syriac, coptic, duployan, old-permic, canadian-aboriginal, tifinagh, todhri, math, tai-le</li>
+<li>U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan</li>
 <li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage</li>
 <li>U+030C COMBINING CARON: try adding one of: cherokee, tai-le</li>
 <li>U+0312 COMBINING TURNED COMMA ABOVE: try adding math</li>
 <li>U+0326 COMBINING COMMA BELOW: try adding math</li>
 <li>U+0327 COMBINING CEDILLA: try adding math</li>
 <li>U+0328 COMBINING OGONEK: not included in any glyphset definition</li>
-<li>U+0394 GREEK CAPITAL LETTER DELTA: try adding one of: elbasan, math, greek</li>
-<li>U+03A9 GREEK CAPITAL LETTER OMEGA: try adding one of: elbasan, math, greek</li>
+<li>U+0394 GREEK CAPITAL LETTER DELTA: try adding one of: math, elbasan, greek</li>
+<li>U+03A9 GREEK CAPITAL LETTER OMEGA: try adding one of: math, elbasan, greek</li>
 <li>U+03BC GREEK SMALL LETTER MU: try adding one of: math, greek</li>
-<li>U+03C0 GREEK SMALL LETTER PI: try adding one of: math, yi, greek</li>
+<li>U+03C0 GREEK SMALL LETTER PI: try adding one of: math, greek, yi</li>
 <li>U+2021 DOUBLE DAGGER: try adding adlam</li>
 <li>U+2030 PER MILLE SIGN: try adding adlam</li>
 <li>U+212E ESTIMATED SYMBOL: try adding math</li>
 <li>U+2202 PARTIAL DIFFERENTIAL: try adding math</li>
 <li>U+220F N-ARY PRODUCT: try adding math</li>
 <li>U+2211 N-ARY SUMMATION: try adding math</li>
-<li>U+2219 BULLET OPERATOR: try adding one of: math, symbols, yi, tai-tham</li>
+<li>U+2219 BULLET OPERATOR: try adding one of: symbols, math, tai-tham, yi</li>
 <li>U+221A SQUARE ROOT: try adding math</li>
 <li>U+221E INFINITY: try adding math</li>
 <li>U+222B INTEGRAL: try adding math</li>
@@ -482,7 +265,7 @@ definitions.</p>
 <li>U+2260 NOT EQUAL TO: try adding math</li>
 <li>U+2264 LESS-THAN OR EQUAL TO: try adding math</li>
 <li>U+2265 GREATER-THAN OR EQUAL TO: try adding math</li>
-<li>U+25CA LOZENGE: try adding one of: math, symbols</li>
+<li>U+25CA LOZENGE: try adding one of: symbols, math</li>
 <li>U+266A EIGHTH NOTE: try adding one of: symbols, music</li>
 </ul>
 <p>Or you can add the above codepoints to one of the subsets supported by the font: <code>latin</code>, <code>latin-ext</code></p>
@@ -524,8 +307,162 @@ definitions.</p>
 * ⚠️ **WARN** <p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌</p>
 <p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́</p>
 <p>Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers).</p>
-<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Dan (Latn, 1,099,244 speakers), Han (Latn, 6 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Kom (Latn, 360,685 speakers), Bete-Bendi (Latn, 100,000 speakers), Cicipu (Latn, 44,000 speakers), Sar (Latn, 500,000 speakers), Ngbaka (Latn, 1,020,000 speakers), Ebira (Latn, 2,200,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Navajo (Latn, 166,319 speakers), Heiltsuk (Latn, 300 speakers), Aghem (Latn, 38,843 speakers), Koonzime (Latn, 40,000 speakers), Nateni (Latn, 100,000 speakers), Lugbara (Latn, 2,200,000 speakers), Ejagham (Latn, 120,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Zapotec (Latn, 490,000 speakers), Mango (Latn, 77,000 speakers), Avokaya (Latn, 100,000 speakers), Southern Kisi (Latn, 360,000 speakers), Nzakara (Latn, 50,000 speakers), Igbo (Latn, 27,823,640 speakers), Ma’di (Latn, 584,000 speakers), Mfumte (Latn, 79,000 speakers), Mundani (Latn, 34,000 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Dii (Latn, 71,000 speakers), Gulay (Latn, 250,478 speakers), Teke-Ebo (Latn, 260,000 speakers), Ekpeye (Latn, 226,000 speakers), Fur (Latn, 1,230,163 speakers), Bafut (Latn, 158,146 speakers), South Central Banda (Latn, 244,000 speakers), Yala (Latn, 200,000 speakers), Kaska (Latn, 125 speakers), Basaa (Latn, 332,940 speakers), Vute (Latn, 21,000 speakers), Makaa (Latn, 221,000 speakers).</p>
+<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Ekpeye (Latn, 226,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Gulay (Latn, 250,478 speakers), Basaa (Latn, 332,940 speakers), Lugbara (Latn, 2,200,000 speakers), Bete-Bendi (Latn, 100,000 speakers), Mango (Latn, 77,000 speakers), Teke-Ebo (Latn, 260,000 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Makaa (Latn, 221,000 speakers), Mundani (Latn, 34,000 speakers), Ejagham (Latn, 120,000 speakers), Yala (Latn, 200,000 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Vute (Latn, 21,000 speakers), Avokaya (Latn, 100,000 speakers), Ebira (Latn, 2,200,000 speakers), Navajo (Latn, 166,319 speakers), Dii (Latn, 71,000 speakers), Nateni (Latn, 100,000 speakers), Southern Kisi (Latn, 360,000 speakers), Han (Latn, 6 speakers), Igbo (Latn, 27,823,640 speakers), Zapotec (Latn, 490,000 speakers), Cicipu (Latn, 44,000 speakers), Nzakara (Latn, 50,000 speakers), Ma’di (Latn, 584,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), South Central Banda (Latn, 244,000 speakers), Ngbaka (Latn, 1,020,000 speakers), Bafut (Latn, 158,146 speakers), Kaska (Latn, 125 speakers), Fur (Latn, 1,230,163 speakers), Heiltsuk (Latn, 300 speakers), Aghem (Latn, 38,843 speakers), Sar (Latn, 500,000 speakers), Kom (Latn, 360,685 speakers), Mfumte (Latn, 79,000 speakers), Dan (Latn, 1,099,244 speakers), Koonzime (Latn, 40,000 speakers).</p>
  [code: soft-dotted]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>⚠️ <b>WARN</b> Are there any misaligned on-curve points? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/outline.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* ⚠️ **WARN** <p>The following glyphs have on-curve points which have potentially incorrect y coordinates:</p>
+<pre><code>* Aogonek (U+0104): X=515.0,Y=2.0 (should be at baseline 0?)
+
+* Aogonek (U+0104): X=515.0,Y=2.0 (should be at baseline 0?)
+
+* S (U+0053): X=202.5,Y=666.5 (should be at cap-height 668?)
+
+* S (U+0053): X=392.0,Y=666.5 (should be at cap-height 668?)
+
+* Sacute (U+015A): X=202.5,Y=666.5 (should be at cap-height 668?)
+
+* Sacute (U+015A): X=392.0,Y=666.5 (should be at cap-height 668?)
+
+* Scaron (U+0160): X=202.5,Y=666.5 (should be at cap-height 668?)
+
+* Scaron (U+0160): X=392.0,Y=666.5 (should be at cap-height 668?)
+
+* Scedilla (U+015E): X=202.5,Y=666.5 (should be at cap-height 668?)
+
+* Scedilla (U+015E): X=392.0,Y=666.5 (should be at cap-height 668?)
+
+* uni0218 (U+0218): X=202.5,Y=666.5 (should be at cap-height 668?)
+
+* uni0218 (U+0218): X=392.0,Y=666.5 (should be at cap-height 668?)
+
+* Uring (U+016E): X=345.0,Y=670.0 (should be at cap-height 668?)
+
+* Uring (U+016E): X=345.0,Y=670.0 (should be at cap-height 668?)
+
+* aacute (U+00E1): X=390.0,Y=670.0 (should be at cap-height 668?)
+
+* agrave (U+00E0): X=126.0,Y=670.0 (should be at cap-height 668?)
+
+* b (U+0062): X=247.5,Y=-1.5 (should be at baseline 0?)
+
+* cacute (U+0107): X=404.0,Y=670.0 (should be at cap-height 668?)
+
+* dcaron (U+010F): X=651.5,Y=667.5 (should be at cap-height 668?)
+
+* eacute (U+00E9): X=413.0,Y=670.0 (should be at cap-height 668?)
+
+* egrave (U+00E8): X=149.0,Y=670.0 (should be at cap-height 668?)
+
+* uni0123 (U+0123): X=215.0,Y=666.0 (should be at cap-height 668?)
+
+* uni0123 (U+0123): X=281.0,Y=670.0 (should be at cap-height 668?)
+
+* iacute (U+00ED): X=260.0,Y=670.0 (should be at cap-height 668?)
+
+* igrave (U+00EC): X=-4.0,Y=670.0 (should be at cap-height 668?)
+
+* ij (U+0133): X=423.0,Y=-1.0 (should be at baseline 0?)
+
+* j (U+006A): X=171.0,Y=-1.0 (should be at baseline 0?)
+
+* uni0237 (U+0237): X=171.0,Y=-1.0 (should be at baseline 0?)
+
+* uni006A0301: X=171.0,Y=-1.0 (should be at baseline 0?)
+
+* uni006A0301: X=261.0,Y=670.0 (should be at cap-height 668?)
+
+* lcaron (U+013E): X=309.5,Y=668.5 (should be at cap-height 668?)
+
+* nacute (U+0144): X=407.0,Y=670.0 (should be at cap-height 668?)
+
+* oacute (U+00F3): X=406.0,Y=670.0 (should be at cap-height 668?)
+
+* ograve (U+00F2): X=142.0,Y=670.0 (should be at cap-height 668?)
+
+* p (U+0070): X=247.5,Y=-1.5 (should be at baseline 0?)
+
+* thorn (U+00FE): X=247.5,Y=-1.5 (should be at baseline 0?)
+
+* racute (U+0155): X=335.0,Y=670.0 (should be at cap-height 668?)
+
+* s (U+0073): X=154.5,Y=1.5 (should be at baseline 0?)
+
+* sacute (U+015B): X=154.5,Y=1.5 (should be at baseline 0?)
+
+* sacute (U+015B): X=368.0,Y=670.0 (should be at cap-height 668?)
+
+* scaron (U+0161): X=154.5,Y=1.5 (should be at baseline 0?)
+
+* uni0219 (U+0219): X=154.5,Y=1.5 (should be at baseline 0?)
+
+* uacute (U+00FA): X=402.0,Y=670.0 (should be at cap-height 668?)
+
+* ugrave (U+00F9): X=138.0,Y=670.0 (should be at cap-height 668?)
+
+* wacute (U+1E83): X=474.0,Y=670.0 (should be at cap-height 668?)
+
+* wgrave (U+1E81): X=210.0,Y=670.0 (should be at cap-height 668?)
+
+* y (U+0079): X=189.0,Y=-1.0 (should be at baseline 0?)
+
+* yacute (U+00FD): X=189.0,Y=-1.0 (should be at baseline 0?)
+
+* yacute (U+00FD): X=357.0,Y=670.0 (should be at cap-height 668?)
+
+* ycircumflex (U+0177): X=189.0,Y=-1.0 (should be at baseline 0?)
+
+* ydieresis (U+00FF): X=189.0,Y=-1.0 (should be at baseline 0?)
+
+* ygrave (U+1EF3): X=189.0,Y=-1.0 (should be at baseline 0?)
+
+* ygrave (U+1EF3): X=93.0,Y=670.0 (should be at cap-height 668?)
+
+* zacute (U+017A): X=362.0,Y=670.0 (should be at cap-height 668?)
+
+* ordfeminine (U+00AA): X=110.5,Y=670.0 (should be at cap-height 668?)
+
+* uni03BC (U+03BC): X=200.0,Y=2.0 (should be at baseline 0?)
+
+* three (U+0033): X=362.5,Y=670.0 (should be at cap-height 668?)
+
+* three.tf: X=404.5,Y=670.0 (should be at cap-height 668?)
+
+* threequarters (U+00BE): X=254.0,Y=668.5 (should be at cap-height 668?)
+
+* exclamdown (U+00A1): X=98.0,Y=2.0 (should be at baseline 0?)
+
+* exclamdown (U+00A1): X=188.0,Y=2.0 (should be at baseline 0?)
+
+* at (U+0040): X=532.0,Y=1.0 (should be at baseline 0?)
+
+* ampersand (U+0026): X=420.5,Y=666.0 (should be at cap-height 668?)
+
+* gravecomb (U+0300): X=40.0,Y=670.0 (should be at cap-height 668?)
+
+* acutecomb (U+0301): X=203.0,Y=670.0 (should be at cap-height 668?)
+
+* uni030C.alt: X=137.5,Y=666.5 (should be at cap-height 668?)
+
+* uni0312 (U+0312): X=40.0,Y=666.0 (should be at cap-height 668?)
+
+* uni0312 (U+0312): X=106.0,Y=670.0 (should be at cap-height 668?)
+</code></pre>
+ [code: found-misalignments]
 
 
 
@@ -570,47 +507,8 @@ definitions.</p>
 </div>
 </details>
 
-<details><summary>[19] AtkinsonHyperlegibleNext-Italic[wght].ttf</summary>
+<details><summary>[11] AtkinsonHyperlegibleNext-Italic[wght].ttf</summary>
 <div>
-<details>
-    <summary>🔥 <b>FAIL</b> Checking Vertical Metric Linegaps. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.metrics.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>hhea lineGap is not equal to 0.</p>
-<p><em>Overridden</em>: This check was originally a WARN but was
-overridden by the universal profile:
-For Google Fonts, all messages from this check are considered FAILs.</p>
- [code: hhea]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>🔥 <b>FAIL</b> Checking OS/2 Metrics match hhea Metrics. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.metrics.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>OS/2 sTypoDescender (-251) and hhea descent (-161) must be equal.</p>
- [code: descender]
-
-
-
-</div>
-</details>
-
 <details>
     <summary>🔥 <b>FAIL</b> Combined length of family and style must not exceed 32 characters. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.name.html#"></a></summary>
     <div>
@@ -714,83 +612,6 @@ For Google Fonts, all messages from this check are considered FAILs.</p>
 </details>
 
 <details>
-    <summary>🔥 <b>FAIL</b> Check copyright namerecords match license file. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.license.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>License file OFL.txt exists but NameID 13 (LICENSE DESCRIPTION) value on platform 3 (WINDOWS) is not specified for that. Value was: &quot;Braille Institute of America, Inc. provides Atkinson Hyperlegible for use, without derivatives or alteration, to the public free of charge for all non-commercial and commercial work. No attribution required.&quot; Must be changed to &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: <a href="https://openfontlicense.org">https://openfontlicense.org</a>&quot;</p>
- [code: wrong]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>🔥 <b>FAIL</b> Substitute copyright, registered and trademark symbols in name table entries. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.name.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>NAMEID #0 contains symbols that should be replaced by '(c)'.</p>
- [code: unwanted-chars]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>🔥 <b>FAIL</b> Copyright notices match canonical pattern in fonts <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.copyright.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>Name Table entry: Copyright notices should match a pattern similar to:</p>
-<p>&quot;Copyright 2020 The Familyname Project Authors (git url)&quot;</p>
-<p>But instead we have got:</p>
-<p>&quot;© 2020, 2024 Braille Institute of America, Inc., a 501(c)(3) Charitable Organization.&quot;</p>
- [code: bad-notice-format]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>🔥 <b>FAIL</b> Checking OS/2 fsType does not impose restrictions. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.os2.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>In this font fsType is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.</p>
-<p>No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead.</p>
- [code: drm]
-
-
-
-</div>
-</details>
-
-<details>
     <summary>🔥 <b>FAIL</b> Check Google Fonts glyph coverage. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.glyphset.html#"></a></summary>
     <div>
 
@@ -853,57 +674,6 @@ The font may be embedded but must only be installed temporarily on other systems
 </details>
 
 <details>
-    <summary>🔥 <b>FAIL</b> Are there non-ASCII characters in ASCII-only NAME table entries? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.name.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>Bad string at [nameID 0, 'utf_16_be']: 'b'© 2020, 2024 Braille Institute of America, Inc., a 501(c)(3) Charitable Organization.''</p>
- [code: bad-string]
-
-
-
-* 🔥 **FAIL** <p>There are 1 strings containing non-ASCII characters in the ASCII-only NAME table entries.</p>
- [code: non-ascii-strings]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>🔥 <b>FAIL</b> Check font follows the Google Fonts vertical metric schema <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.vmetrics.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>OS/2.sTypoLineGap is &quot;150&quot; it should be 0</p>
- [code: bad-OS/2.sTypoLineGap]
-
-
-
-* 🔥 **FAIL** <p>hhea.lineGap is &quot;200&quot; it should be 0</p>
- [code: bad-hhea.lineGap]
-
-
-
-* 🔥 **FAIL** <p>The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 1157 when it should be at least 1200</p>
- [code: bad-hhea-range]
-
-
-
-</div>
-</details>
-
-<details>
     <summary>⚠️ <b>WARN</b> Check math signs have the same width. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#"></a></summary>
     <div>
 
@@ -922,7 +692,7 @@ equal, notequal</p>
 <p>Width = 602:
 logicalnot</p>
 <p>Width = 579:
-plusminus, lessequal, greaterequal</p>
+lessequal, plusminus, greaterequal</p>
 <p>Width = 531:
 multiply</p>
 <p>Width = 554:
@@ -988,27 +758,27 @@ be served. You can solve this by either manually adding additional
 subset declarations to METADATA.pb, or by editing the glyphset
 definitions.</p>
 <ul>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, tifinagh, math, coptic</li>
-<li>U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: math, todhri, tai-le, duployan, hebrew, malayalam, old-permic, tifinagh, syriac, coptic, canadian-aboriginal</li>
-<li>U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, math, tifinagh, coptic</li>
+<li>U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: hebrew, malayalam, syriac, coptic, duployan, old-permic, canadian-aboriginal, tifinagh, todhri, math, tai-le</li>
+<li>U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan</li>
 <li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage</li>
 <li>U+030C COMBINING CARON: try adding one of: cherokee, tai-le</li>
 <li>U+0312 COMBINING TURNED COMMA ABOVE: try adding math</li>
 <li>U+0326 COMBINING COMMA BELOW: try adding math</li>
 <li>U+0327 COMBINING CEDILLA: try adding math</li>
 <li>U+0328 COMBINING OGONEK: not included in any glyphset definition</li>
-<li>U+0394 GREEK CAPITAL LETTER DELTA: try adding one of: elbasan, math, greek</li>
-<li>U+03A9 GREEK CAPITAL LETTER OMEGA: try adding one of: elbasan, math, greek</li>
+<li>U+0394 GREEK CAPITAL LETTER DELTA: try adding one of: math, elbasan, greek</li>
+<li>U+03A9 GREEK CAPITAL LETTER OMEGA: try adding one of: math, elbasan, greek</li>
 <li>U+03BC GREEK SMALL LETTER MU: try adding one of: math, greek</li>
-<li>U+03C0 GREEK SMALL LETTER PI: try adding one of: math, yi, greek</li>
+<li>U+03C0 GREEK SMALL LETTER PI: try adding one of: math, greek, yi</li>
 <li>U+2021 DOUBLE DAGGER: try adding adlam</li>
 <li>U+2030 PER MILLE SIGN: try adding adlam</li>
 <li>U+212E ESTIMATED SYMBOL: try adding math</li>
 <li>U+2202 PARTIAL DIFFERENTIAL: try adding math</li>
 <li>U+220F N-ARY PRODUCT: try adding math</li>
 <li>U+2211 N-ARY SUMMATION: try adding math</li>
-<li>U+2219 BULLET OPERATOR: try adding one of: math, symbols, yi, tai-tham</li>
+<li>U+2219 BULLET OPERATOR: try adding one of: symbols, math, tai-tham, yi</li>
 <li>U+221A SQUARE ROOT: try adding math</li>
 <li>U+221E INFINITY: try adding math</li>
 <li>U+222B INTEGRAL: try adding math</li>
@@ -1016,7 +786,7 @@ definitions.</p>
 <li>U+2260 NOT EQUAL TO: try adding math</li>
 <li>U+2264 LESS-THAN OR EQUAL TO: try adding math</li>
 <li>U+2265 GREATER-THAN OR EQUAL TO: try adding math</li>
-<li>U+25CA LOZENGE: try adding one of: math, symbols</li>
+<li>U+25CA LOZENGE: try adding one of: symbols, math</li>
 <li>U+266A EIGHTH NOTE: try adding one of: symbols, music</li>
 </ul>
 <p>Or you can add the above codepoints to one of the subsets supported by the font: <code>latin</code>, <code>latin-ext</code></p>
@@ -1058,7 +828,7 @@ definitions.</p>
 * ⚠️ **WARN** <p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌</p>
 <p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́</p>
 <p>Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers).</p>
-<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Dan (Latn, 1,099,244 speakers), Han (Latn, 6 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Kom (Latn, 360,685 speakers), Bete-Bendi (Latn, 100,000 speakers), Cicipu (Latn, 44,000 speakers), Sar (Latn, 500,000 speakers), Ngbaka (Latn, 1,020,000 speakers), Ebira (Latn, 2,200,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Navajo (Latn, 166,319 speakers), Heiltsuk (Latn, 300 speakers), Aghem (Latn, 38,843 speakers), Koonzime (Latn, 40,000 speakers), Nateni (Latn, 100,000 speakers), Lugbara (Latn, 2,200,000 speakers), Ejagham (Latn, 120,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Zapotec (Latn, 490,000 speakers), Mango (Latn, 77,000 speakers), Avokaya (Latn, 100,000 speakers), Southern Kisi (Latn, 360,000 speakers), Nzakara (Latn, 50,000 speakers), Igbo (Latn, 27,823,640 speakers), Ma’di (Latn, 584,000 speakers), Mfumte (Latn, 79,000 speakers), Mundani (Latn, 34,000 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Dii (Latn, 71,000 speakers), Gulay (Latn, 250,478 speakers), Teke-Ebo (Latn, 260,000 speakers), Ekpeye (Latn, 226,000 speakers), Fur (Latn, 1,230,163 speakers), Bafut (Latn, 158,146 speakers), South Central Banda (Latn, 244,000 speakers), Yala (Latn, 200,000 speakers), Kaska (Latn, 125 speakers), Basaa (Latn, 332,940 speakers), Vute (Latn, 21,000 speakers), Makaa (Latn, 221,000 speakers).</p>
+<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Ekpeye (Latn, 226,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Gulay (Latn, 250,478 speakers), Basaa (Latn, 332,940 speakers), Lugbara (Latn, 2,200,000 speakers), Bete-Bendi (Latn, 100,000 speakers), Mango (Latn, 77,000 speakers), Teke-Ebo (Latn, 260,000 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Makaa (Latn, 221,000 speakers), Mundani (Latn, 34,000 speakers), Ejagham (Latn, 120,000 speakers), Yala (Latn, 200,000 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Vute (Latn, 21,000 speakers), Avokaya (Latn, 100,000 speakers), Ebira (Latn, 2,200,000 speakers), Navajo (Latn, 166,319 speakers), Dii (Latn, 71,000 speakers), Nateni (Latn, 100,000 speakers), Southern Kisi (Latn, 360,000 speakers), Han (Latn, 6 speakers), Igbo (Latn, 27,823,640 speakers), Zapotec (Latn, 490,000 speakers), Cicipu (Latn, 44,000 speakers), Nzakara (Latn, 50,000 speakers), Ma’di (Latn, 584,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), South Central Banda (Latn, 244,000 speakers), Ngbaka (Latn, 1,020,000 speakers), Bafut (Latn, 158,146 speakers), Kaska (Latn, 125 speakers), Fur (Latn, 1,230,163 speakers), Heiltsuk (Latn, 300 speakers), Aghem (Latn, 38,843 speakers), Sar (Latn, 500,000 speakers), Kom (Latn, 360,685 speakers), Mfumte (Latn, 79,000 speakers), Dan (Latn, 1,099,244 speakers), Koonzime (Latn, 40,000 speakers).</p>
  [code: soft-dotted]
 
 
@@ -1077,55 +847,7 @@ definitions.</p>
 
 
 * ⚠️ **WARN** <p>The following glyphs have on-curve points which have potentially incorrect y coordinates:</p>
-<pre><code>* Adieresis (U+00C4): X=465.0,Y=794.0 (should be at ascender 796?)
-
-* Adieresis (U+00C4): X=573.0,Y=794.0 (should be at ascender 796?)
-
-* Adieresis (U+00C4): X=285.0,Y=794.0 (should be at ascender 796?)
-
-* Adieresis (U+00C4): X=393.0,Y=794.0 (should be at ascender 796?)
-
-* Aring (U+00C5): X=507.0,Y=669.0 (should be at cap-height 668?)
-
-* Cdotaccent (U+010A): X=411.0,Y=794.0 (should be at ascender 796?)
-
-* Cdotaccent (U+010A): X=519.0,Y=794.0 (should be at ascender 796?)
-
-* Edieresis (U+00CB): X=457.0,Y=794.0 (should be at ascender 796?)
-
-* Edieresis (U+00CB): X=565.0,Y=794.0 (should be at ascender 796?)
-
-* Edieresis (U+00CB): X=277.0,Y=794.0 (should be at ascender 796?)
-
-* Edieresis (U+00CB): X=385.0,Y=794.0 (should be at ascender 796?)
-
-* Edotaccent (U+0116): X=367.0,Y=794.0 (should be at ascender 796?)
-
-* Edotaccent (U+0116): X=475.0,Y=794.0 (should be at ascender 796?)
-
-* Gdotaccent (U+0120): X=411.0,Y=794.0 (should be at ascender 796?)
-
-* Gdotaccent (U+0120): X=519.0,Y=794.0 (should be at ascender 796?)
-
-* Idieresis (U+00CF): X=347.0,Y=794.0 (should be at ascender 796?)
-
-* Idieresis (U+00CF): X=455.0,Y=794.0 (should be at ascender 796?)
-
-* Idieresis (U+00CF): X=167.0,Y=794.0 (should be at ascender 796?)
-
-* Idieresis (U+00CF): X=275.0,Y=794.0 (should be at ascender 796?)
-
-* Idotaccent (U+0130): X=257.0,Y=794.0 (should be at ascender 796?)
-
-* Idotaccent (U+0130): X=365.0,Y=794.0 (should be at ascender 796?)
-
-* Odieresis (U+00D6): X=499.0,Y=794.0 (should be at ascender 796?)
-
-* Odieresis (U+00D6): X=607.0,Y=794.0 (should be at ascender 796?)
-
-* Odieresis (U+00D6): X=319.0,Y=794.0 (should be at ascender 796?)
-
-* Odieresis (U+00D6): X=427.0,Y=794.0 (should be at ascender 796?)
+<pre><code>* Aring (U+00C5): X=507.0,Y=669.0 (should be at cap-height 668?)
 
 * S (U+0053): X=262.5,Y=666.5 (should be at cap-height 668?)
 
@@ -1155,14 +877,6 @@ definitions.</p>
 
 * Udieresis (U+00DC): X=232.0,Y=-1.5 (should be at baseline 0?)
 
-* Udieresis (U+00DC): X=496.0,Y=794.0 (should be at ascender 796?)
-
-* Udieresis (U+00DC): X=604.0,Y=794.0 (should be at ascender 796?)
-
-* Udieresis (U+00DC): X=316.0,Y=794.0 (should be at ascender 796?)
-
-* Udieresis (U+00DC): X=424.0,Y=794.0 (should be at ascender 796?)
-
 * Ugrave (U+00D9): X=232.0,Y=-1.5 (should be at baseline 0?)
 
 * Uhungarumlaut (U+0170): X=232.0,Y=-1.5 (should be at baseline 0?)
@@ -1176,26 +890,6 @@ definitions.</p>
 * Uring (U+016E): X=438.0,Y=670.0 (should be at cap-height 668?)
 
 * Uring (U+016E): X=232.0,Y=-1.5 (should be at baseline 0?)
-
-* Wdieresis (U+1E84): X=577.0,Y=794.0 (should be at ascender 796?)
-
-* Wdieresis (U+1E84): X=685.0,Y=794.0 (should be at ascender 796?)
-
-* Wdieresis (U+1E84): X=397.0,Y=794.0 (should be at ascender 796?)
-
-* Wdieresis (U+1E84): X=505.0,Y=794.0 (should be at ascender 796?)
-
-* Ydieresis (U+0178): X=435.0,Y=794.0 (should be at ascender 796?)
-
-* Ydieresis (U+0178): X=543.0,Y=794.0 (should be at ascender 796?)
-
-* Ydieresis (U+0178): X=255.0,Y=794.0 (should be at ascender 796?)
-
-* Ydieresis (U+0178): X=363.0,Y=794.0 (should be at ascender 796?)
-
-* Zdotaccent (U+017B): X=368.0,Y=794.0 (should be at ascender 796?)
-
-* Zdotaccent (U+017B): X=476.0,Y=794.0 (should be at ascender 796?)
 
 * a (U+0061): X=87.0,Y=2.0 (should be at baseline 0?)
 
@@ -1254,18 +948,6 @@ definitions.</p>
 * greater (U+003E): X=-13.0,Y=1.0 (should be at baseline 0?)
 
 * less (U+003C): X=460.0,Y=1.0 (should be at baseline 0?)
-
-* uni0308.case: X=334.0,Y=794.0 (should be at ascender 796?)
-
-* uni0308.case: X=442.0,Y=794.0 (should be at ascender 796?)
-
-* uni0308.case: X=154.0,Y=794.0 (should be at ascender 796?)
-
-* uni0308.case: X=262.0,Y=794.0 (should be at ascender 796?)
-
-* uni0307.case: X=154.0,Y=794.0 (should be at ascender 796?)
-
-* uni0307.case: X=262.0,Y=794.0 (should be at ascender 796?)
 </code></pre>
  [code: found-misalignments]
 
@@ -1341,8 +1023,8 @@ definitions.</p>
 
 | 💥 ERROR | ☠ FATAL | 🔥 FAIL | ⚠️ WARN | ⏩ SKIP | ℹ️ INFO | ✅ PASS | 🔎 DEBUG | 
 | ---|---|---|---|---|---|---|---|
-| 0 | 0 | 23 | 17 | 189 | 15 | 240 | 0 | 
-| 0% | 0% | 5% | 4% | 39% | 3% | 50% | 0% | 
+| 0 | 0 | 5 | 18 | 187 | 15 | 259 | 0 | 
+| 0% | 0% | 1% | 4% | 39% | 3% | 54% | 0% | 
 
 
 
