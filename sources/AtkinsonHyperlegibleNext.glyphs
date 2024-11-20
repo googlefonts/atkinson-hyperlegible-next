@@ -214,15 +214,15 @@ axesValues = (
 customParameters = (
 {
 name = typoAscender;
-value = 796;
+value = 984;
 },
 {
 name = typoDescender;
-value = -251;
+value = -316;
 },
 {
 name = typoLineGap;
-value = 150;
+value = 0;
 },
 {
 name = winAscent;
@@ -246,32 +246,19 @@ value = 258;
 },
 {
 name = hheaAscender;
-value = 796;
+value = 984;
 },
 {
 name = hheaDescender;
-value = -161;
+value = -316;
 },
 {
 name = hheaLineGap;
-value = 200;
+value = 0;
 },
 {
 name = strikeoutSize;
 value = 48;
-},
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 200;
-},
-{
-Axis = Italic;
-Location = 0;
-}
-);
 },
 {
 name = TTFStems;
@@ -385,15 +372,15 @@ axesValues = (
 customParameters = (
 {
 name = typoAscender;
-value = 796;
+value = 984;
 },
 {
 name = typoDescender;
-value = -251;
+value = -316;
 },
 {
 name = typoLineGap;
-value = 150;
+value = 0;
 },
 {
 name = winAscent;
@@ -417,32 +404,19 @@ value = 258;
 },
 {
 name = hheaAscender;
-value = 796;
+value = 984;
 },
 {
 name = hheaDescender;
-value = -161;
+value = -316;
 },
 {
 name = hheaLineGap;
-value = 200;
+value = 0;
 },
 {
 name = strikeoutSize;
 value = 56;
-},
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 400;
-},
-{
-Axis = Italic;
-Location = 0;
-}
-);
 },
 {
 name = TTFStems;
@@ -549,15 +523,15 @@ axesValues = (
 customParameters = (
 {
 name = typoAscender;
-value = 796;
+value = 984;
 },
 {
 name = typoDescender;
-value = -251;
+value = -316;
 },
 {
 name = typoLineGap;
-value = 150;
+value = 0;
 },
 {
 name = winAscent;
@@ -581,32 +555,19 @@ value = 258;
 },
 {
 name = hheaAscender;
-value = 796;
+value = 984;
 },
 {
 name = hheaDescender;
-value = -161;
+value = -316;
 },
 {
 name = hheaLineGap;
-value = 200;
+value = 0;
 },
 {
 name = strikeoutSize;
 value = 56;
-},
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 700;
-},
-{
-Axis = Italic;
-Location = 0;
-}
-);
 },
 {
 name = TTFStems;
@@ -719,15 +680,15 @@ axesValues = (
 customParameters = (
 {
 name = typoAscender;
-value = 796;
+value = 984;
 },
 {
 name = typoDescender;
-value = -251;
+value = -316;
 },
 {
 name = typoLineGap;
-value = 150;
+value = 0;
 },
 {
 name = winAscent;
@@ -751,32 +712,19 @@ value = 258;
 },
 {
 name = hheaAscender;
-value = 796;
+value = 984;
 },
 {
 name = hheaDescender;
-value = -161;
+value = -316;
 },
 {
 name = hheaLineGap;
-value = 200;
+value = 0;
 },
 {
 name = strikeoutSize;
 value = 56;
-},
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 800;
-},
-{
-Axis = Italic;
-Location = 0;
-}
-);
 },
 {
 name = TTFStems;
