@@ -146,14 +146,6 @@
 
 	  
 	    @font-face{
-    src: url("AtkinsonHyperlegibleNext-Italic%5Bwght%5D.ttf");
-    font-family: "Atkinson Hyperlegible Next";
-    font-weight: 200 800;
-    
-    font-style: italic;
-}
-	  
-	    @font-face{
     src: url("AtkinsonHyperlegibleNext%5Bwght%5D.ttf");
     font-family: "Atkinson Hyperlegible Next";
     font-weight: 200 800;
@@ -161,25 +153,33 @@
     font-style: normal;
 }
 	  
-
-	  
-
-	  
-
-	  
-	    .ExtraLight{
-    font-family: "Atkinson Hyperlegible Next", "Adobe NotDef";
-    font-weight: 200.0;
+	    @font-face{
+    src: url("AtkinsonHyperlegibleNext-Italic%5Bwght%5D.ttf");
+    font-family: "Atkinson Hyperlegible Next";
+    font-weight: 200 800;
     
-    font-style: normal;
-    font-variation-settings: "wght" 200.0;
+    font-style: italic;
 }
+	  
+
+	  
+
+	  
+
 	  
 	    .ExtraLight-Italic{
     font-family: "Atkinson Hyperlegible Next", "Adobe NotDef";
     font-weight: 200.0;
     
     font-style: italic;
+    font-variation-settings: "wght" 200.0;
+}
+	  
+	    .ExtraLight{
+    font-family: "Atkinson Hyperlegible Next", "Adobe NotDef";
+    font-weight: 200.0;
+    
+    font-style: normal;
     font-variation-settings: "wght" 200.0;
 }
 	  
@@ -222,8 +222,8 @@
 	
   
       <div class="box">
-	<div class="box-title">ExtraLight 20pt</div>
-	  <span class="box-text ExtraLight" style="font-size: 20pt">
+	<div class="box-title">ExtraLight-Italic 20pt</div>
+	  <span class="box-text ExtraLight-Italic" style="font-size: 20pt">
 	    
 	      <div class="cell"> </div>
 	    
@@ -953,8 +953,8 @@
        </div>
     
       <div class="box">
-	<div class="box-title">ExtraLight-Italic 20pt</div>
-	  <span class="box-text ExtraLight-Italic" style="font-size: 20pt">
+	<div class="box-title">ExtraLight 20pt</div>
+	  <span class="box-text ExtraLight" style="font-size: 20pt">
 	    
 	      <div class="cell"> </div>
 	    
